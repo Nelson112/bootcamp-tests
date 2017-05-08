@@ -1,7 +1,5 @@
-describe('yearsAgo.js', function () {
-  it ("return 'year', when given year" , function(){
-    assert.equal(1, yearsAgo(2015));
-    assert.equal(6, yearsAgo(2010));
+describe("yearsAgo", function(){
+  it("should return 'results' when given 'ago1.getFullYear()-ago2.getFullYear()'", function(){
+    assert.equal(yearsAgo('2016-11-11', '1994-04-03'), 22)
   });
-
-})
+});
